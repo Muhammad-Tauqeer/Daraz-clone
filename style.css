@@ -1,0 +1,354 @@
+#button {
+    background-color: orangered;
+    display: flex;
+    flex-direction: row-reverse;
+    right: 0px;
+    position: relative;
+    top: 0px;
+}
+
+#b1 {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    color: white;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+#b2 {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    color: white;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    /* Full width of the viewport */
+    background-color: orangered;
+    z-index: 1000;
+    /* Ensures it's always on top */
+    padding: 0 20px;
+}
+
+/* Adjust the logo and other elements inside navbar */
+#logo {
+    height: 50px;
+    margin-top: 10px;
+}
+
+#search {
+    width: 750px;
+    height: 46.5px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#bs1 {
+    height: 46px;
+    width: 50px;
+    margin-top: 10px;
+    background-color: papayawhip;
+    border: none;
+}
+
+#cart {
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+/* Slider */
+#slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Make navigation buttons responsive */
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav-btn {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Other styles */
+#body-p {
+    font-size: 22px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.box1 {
+    display: flex;
+    background-color: white;
+    height: 60px;
+    border: gray solid 0.5px;
+}
+
+#item {
+    color: orangered;
+    margin: 20px;
+    font-size: large;
+}
+
+#item2 {
+    color: orangered;
+    margin: 20px;
+    font-size: large;
+    margin-left: auto;
+    text-decoration: none;
+    border: orangered 1px double;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+}
+
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+}
+
+#body-p {
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, sans-serif !important;
+    font-size: x-large;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 60px;
+    border: gray solid 0.5;
+    ;
+}
+
+#item {
+    color: orangered;
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+
+#item2 {
+    color: orangered;
+    margin: 20px;
+    font-size: large;
+    margin-left: 900px;
+    text-decoration: none;
+    border: orangered 1px double;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+}
+.Box1 {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 257px;
+    border: 1px solid gray;
+    background-color: white;
+    margin-left: 5px;
+    position: relative; /* Tooltip ke liye */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.Box1:hover {
+    transform: translateY(-5px); /* Upar thoda sa move karein */
+}
+
+#L-P-1 {
+    height: 70%;
+    width: 98%;
+    margin-left: 5px;
+}
+
+#L-P-2 {
+    margin-left: 4px;
+    margin-top: 5px;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, sans-serif !important;
+    color: black;
+}
+
+#L-P-3 {
+    color: orangered;
+    font-size: larger;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+#cut {
+    color: lightslategray;
+    margin-left: 4px;
+    margin-top: 12px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: orangered;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Tooltip ko div ke upar dikhana */
+    left: 50%;
+    margin-left: -60px; /* Center karne ke liye */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: small;
+}
+
+.Box1:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Tooltip ko dikhana jab hover karte hain */
+}
+
+a {
+    text-decoration: none;
+}
+
+#L-P-4 {
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 257px;
+    border: 1px solid gray;
+    background-color: white;
+    margin-left: 5px;
+    position: relative; /* Tooltip ke liye */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+#L-B-1{
+    height: 70%;
+    width: 98%;
+    margin: 0;
+}
+.box2:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Tooltip ko dikhana jab hover karte hain */
+}
+.box2:hover {
+    transform: translateY(-5px); /* Upar thoda sa move karein */}
+    .categories-row-1{
+        display: flex;
+        flex-direction: row;
+    }
+    #categories{
+        font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, sans-serif !important;
+        font-size: x-large;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+    .cell-1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        height: 150px;
+        width: 150px;
+        background-color: white;
+        border: black 0.5px solid;
+        position: relative; /* Tooltip ke liye */
+        transition: transform 0.3s ease; /* Smooth transition for scaling */
+    }
+    .categories-pic{
+        /* visibility: hidden; */
+        height: 80%;
+        width: 80%;
+       margin: 15px;
+    }
+#link{
+    text-decoration: none;
+}
+.categories-text{
+    margin-top: 0;
+    margin-left: 15px;
+}
+.cell-1:hover {
+    transform: translateY(-5px); /* Upar thoda sa move karein */
+}
+.cell-1:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Tooltip ko dikhana jab hover karte hain */
+}
+.categories-row-2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+}
+#pra-3{
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, sans-serif !important;
+    font-size: x-large;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+
