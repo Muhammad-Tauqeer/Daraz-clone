@@ -299,13 +299,18 @@ a {
     .categories-row-1{
         display: flex;
         flex-direction: row;
+        margin-top: 10px;
     }
+   
     #categories{
         font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, sans-serif !important;
         font-size: x-large;
         margin-left: 25px;
         margin-bottom: 5px;
         margin-top: 30px;
+        padding-top: 6px;
+    
+        
     }
     .cell-1{
         display: flex;
@@ -350,5 +355,26 @@ a {
     margin-bottom: 5px;
     margin-top: 30px;
 }
+#L-B-3{
+    height: 83%;
+    width: 98%;
+    margin: 0;
+}
+#L-B-2{
+    height: 64%;
+    width: 98%;
+    margin: 0;
+}
+#L-P-9{
+    height: 59%;
+    width: 98%;
+    margin: 0;
+}
+#L-P-6{
+    height: 78%;
+    width: 98%;
+    margin: 0;
+}
+
 
 
